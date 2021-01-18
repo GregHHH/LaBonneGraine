@@ -23,7 +23,7 @@
   }
 
   .navbar a:hover, .dropdown:hover .grainesbtn {
-	background-color: green;
+	background-color: blue;
   }
 
   .dropdown-content {
@@ -46,7 +46,7 @@
   }
   
   .dropdown-content a:hover {
-	background-color: green;
+	background-color: blue;
   }
   
   .dropdown:hover .dropdown-content {

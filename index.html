@@ -1,337 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel=preload href="fonts/Avenir_medium.woff">
+	<link rel=preload href="fonts/wilder-webfont.woff">
 	<title>LaBonneGraine</title>
 </head>
+
 <body>
-	 <!-- Navbar -->
-	<div class="navbar">
-		<!-- <div class="dropdown">
-			<button class="dropbtn">GRAINES</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">POMMES DE TERRE</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">GRAINES</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">BULBES</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">PETITS FRUITS</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">LÉGUMES ORIGINAUX</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">FLEURS</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">ACCESSOIRES</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">IDÉES CADEAUX</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div>
-
-		<div class="dropdown">
-			<button class="dropbtn">PROMOS</button>
-			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div> -->
-	</div>
-
+	<!-- Navbar -->
+	<nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo"></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Products</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Contact Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Blog</a>
+            </li>
+        </ul>
+	</nav>
+	
 	<div class="breadcrumb">
 		Accueil > Graines Potagères > Betteraves > Betterave Blanche Avalanche
 	</div>
 
-	<div class="main_title">
-		<p>BETTERAVE BLANCHE AVALANCHE F1</p>
-		<img class="score" src="assets/hand-drawn-shooting-star.svg" alt="note">
-		<p class="score">3 avis</p>
-	</div>
-
- <!-- Product's main infos  -->
-	<div class="product_infos">
-		<div class="product">
-			<img class="main_product_pic" src="assets/betterave.png" alt="product's picture">
-		</div>
-
-		<div class="available">
-			<p>Disponibilité: </p>
-			<p class="stock"> EN STOCK</p>
-		</div>
-		
-		<div class="quantity">
-			<p>Quantité: </p>
-			<input type="number" name="quantité" id="quantity">
-		</div>
-
-		<div class="quantity">
-			<p>Total: </p>
-			<p class="price">9,30€</p>
-			<p> (Ports inclus) </p>
-		</div>		
-	</div>
-
-	<section class="page_section">
-		<h2>Caractéristiques de la semence: </h2>
-		<hr class="solide">
-
-		<div class="elements">
-			<div class="elements_img">
-				<img src="assets/shovel-hand-drawn-tool.png" alt="" class="shovel">
-			</div>
-			<div class="elements_text">
-				<h3>Quand Planter ? </h3>
-				<p>Mars à Mai</p>
+	<section class="title-infos">
+		<div class="main-title">
+			<h1>BETTERAVE BLANCHE AVALANCHE F1</h1>
+			<div class="score">
+				<img class="score-img" src="assets/hand-drawn-shooting-star.svg" alt="note">
+				<p class="score-text">3 avis</p>
 			</div>
 		</div>
 
-		<div class="elements">
-			<div class="elements_img">
-				<img src="assets/shovel-hand-drawn-tool.png" alt="" class="shovel">
+		<div class="product-infos">
+			<div class="product">
+				<img class="main-product-pic" src="assets/betterave.png" alt="product's picture">
 			</div>
-			<div class="elements_text">
-				<h3>Où Planter ?</h3>
-				<p>Ensoleillé</p>
-			</div>
-		</div>	
-
-		<div class="elements">
-			<div class="elements_img">
-				<img src="assets/shovel-hand-drawn-tool.png" alt="" class="shovel">
-			</div>
-			<div class="elements_text">
-				<h3>Temps de pousse ?</h3>
-				<p>3 mois</p>
-			</div>
-		</div>	
-
-		<div class="elements">
-			<div class="elements_img">
-				<img src="assets/shovel-hand-drawn-tool.png" alt="" class="shovel">
-			</div>
-			<div class="elements_text">
-				<h3>Quel Support ?</h3>
-				<p>Pleine terre</p>
-			</div>
-		</div>	
-
-		<div class="elements">
-			<div class="elements_img">
-				<img src="assets/shovel-hand-drawn-tool.png" alt="" class="shovel">
-			</div>
-			<div class="elements_text">
-				<h3>Quand arroser ?</h3>
-				<p>2 x par semaine</p>
-			</div>
-		</div>	
-	
+		</div>
 	</section>
 
-	<div class="page_section">
-		<h2>En savoir plus: </h2>
-		<hr class="solide">
-
-		<h4>Nom botanique: </h4>
-		<p class="more_infos">
-			Beta vulgaris
-		</p>
-		<h4>Conseils pratiques: </h4>
-		<p class="more_infos">
-			On peut semer sur couche ou en pépinière en mars-avril avant un repiquage en place début mai. On peut semer sur place début mai pour une production hivernale. Dans ce cas, semer 4 à 5 graines tous les 20 cm et éclaircir ensuite pour ne conserver que les plus vigoureux.
-		</p>
-		<h4>Entretien du sol: </h4>
-		<p class="more_infos">
-			Binages et sarclages réguliers. Un paillage en été pourra être nécessaire. 
-		</p>
-		<h4>Arrosage: </h4>
-		<p class="more_infos">
-			Arrosages réguliers nécessaires.
-		</p>
-		<h4>Récolte: </h4>
-		<p class="more_infos">
-			On récolte avant les gelées ou en fonction des besoins. Coupez les racines et les feuilles et les laisser sécher sur le sol.
-		</p>
-		<h4>Conservation: </h4>
-		<p class="more_infos"> 
-			Les betteraves seront ensuite conservées en cave ou en silo, dans du sable (comme les carottes).
-		</p>
+	<div class="available">
+		<p class="buying-process">Disponibilité: </p>
+		<p class="stock"> EN STOCK</p>
 	</div>
 
-	<div class="page_section">
-		<h2>Qu'en pensent nos clients ?</h2>
-		<hr class="solide">
+	<div class="conditionning">
+		<p class="buying-process">Conditionnement: </p>
+		<div class="buttons">
+			<button onclick="" id="1">5g</button>
+			<button onclick="" class="active" id="2">10g</button>
+			<button onclick="" id="3">20g</button>
+			<div>
+			</div>
+			<div class="quantity-section">
+				<div class="quantity">
+					<p class="buying-process, quant">Quantité: </p>
+					<button class="quant-btn">-</button>
+					<input type="number" name="quantité" class="quantity-input">
+					<button class="quant-btn">+</button>
+				</div>
 
-		<div class="mark_left">
-			<p class="average_mark">3.8</p>
-			<img class="score" src="assets/hand-drawn-shooting-star.svg" alt="note">
-			<p>5 avis</p>
-		</div>
-		<div class="mark_right">
+				<div class="total">
+					<p>Total: </p>
+					<p class="price">9,30€</p>
+					<p class="port"> (Ports inclus) </p>
+				</div>
+			</div>
+
+			<div class="final">
+				<button class="btn-final">Ajouter au panier</button>
+				<button class="fav"></button>
+			</div>
+
+			<section class="page-section">
+				<h2>Caractéristiques de la semence: </h2>
+				<hr class="solid">
+
+				<div class="elements">
+					<div class="elements-img">
+						<img src="assets/shovel-hand-drawn-tool.png" alt="" class="shovel">
+					</div>
+					<div class="elements-text">
+						<h3>Quand Planter ? </h3>
+						<p class="element-subtext">Mars à Mai</p>
+					</div>
+				</div>
+
+				<div class="elements">
+					<div class="elements-img">
+						<img src="assets/shovel-hand-drawn-tool.png" alt="" class="shovel">
+					</div>
+					<div class="elements-text">
+						<h3>Où Planter ?</h3>
+						<p class="element-subtext">Ensoleillé</p>
+					</div>
+				</div>
+
+				<div class="elements">
+					<div class="elements-img">
+						<img src="assets/shovel-hand-drawn-tool.png" alt="" class="shovel">
+					</div>
+					<div class="elements-text">
+						<h3>Temps de pousse ?</h3>
+						<p class="element-subtext">3 mois</p>
+					</div>
+				</div>
+
+				<div class="elements">
+					<div class="elements-img">
+						<img src="assets/shovel-hand-drawn-tool.png" alt="" class="shovel">
+					</div>
+					<div class="elements-text">
+						<h3>Quel Support ?</h3>
+						<p class="element-subtext">Pleine terre</p>
+					</div>
+				</div>
+
+				<div class="elements">
+					<div class="elements-img">
+						<img src="assets/shovel-hand-drawn-tool.png" alt="" class="shovel">
+					</div>
+					<div class="elements-text">
+						<h3>Quand arroser ?</h3>
+						<p class="element-subtext">2 x par semaine</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-section">
+				<h2>En savoir plus: </h2>
+				<hr class="solid">
+
+				<h3>Nom botanique: </h3>
+				<p class="more-infos">
+					Beta vulgaris
+				</p>
+				<h3>Conseils pratiques: </h3>
+				<p class="more-infos">
+					On peut semer sur couche ou en pépinière en mars-avril avant un repiquage en place début mai. On
+					peut semer sur place début mai pour une production hivernale. Dans ce cas, semer 4 à 5 graines tous
+					les 20 cm et éclaircir ensuite pour ne conserver que les plus vigoureux.
+				</p>
+				<h3>Entretien du sol: </h3>
+				<p class="more-infos">
+					Binages et sarclages réguliers. Un paillage en été pourra être nécessaire.
+				</p>
+				<h3>Arrosage: </h3>
+				<p class="more-infos">
+					Arrosages réguliers nécessaires.
+				</p>
+				<h3>Récolte: </h3>
+				<p class="more-infos">
+					On récolte avant les gelées ou en fonction des besoins. Coupez les racines et les feuilles et les
+					laisser sécher sur le sol.
+				</p>
+				<h3>Conservation: </h3>
+				<p class="more-infos">
+					Les betteraves seront ensuite conservées en cave ou en silo, dans du sable (comme les carottes).
+				</p>
+			</section>
+
+			<section class="page-section">
+				<h2>Qu'en pensent nos clients ?</h2>
+				<hr class="solid">
+					<img class="note" src="assets/notes.svg" alt="note">
+			</section>
+
+			<section class="thoughts">
+				<div class ="user-thought">
+					<img src="assets/man1.png" alt="mr gauthier" class="img-thought">
+					<p class="name">Jules</p>
+					<p class="date">23/12/2020</p>
+					<img src="assets/hand-drawn-shooting-star.svg" alt="3/5" class="user-grade">
+					<p class="avis">Parfait pour une récolte en hiver !</p>
+				</div>
+				<div class="void"></div>
+				<div class ="user-thought">
+					<img src="assets/man2.png" alt="mr gauthier" class="img-thought">
+					<p class="name">Nicolas</p>
+					<p class="date">20/20/2020</p>
+					<img src="assets/hand-drawn-shooting-star.svg" alt="3/5" class="user-grade">
+					<p class="avis">Idéal pour manger la sousoupe.</p>
+				</div>
+				<div class="void"></div>
+				<div class ="user-thought">
+					<img src="assets/man3.png" alt="mr gauthier" class="img-thought">
+					<p class="name">Gauthier A.</p>
+					<p class="date">16/12/2020</p>
+					<img src="assets/hand-drawn-shooting-star.svg" alt="3/5" class="user-grade">
+					<p class="avis">Commande reçue rapidement, graines bien emballées contre l’humidité et les chocs.
+						Plus qu’à attendre le résultat !</p>
+				</div>
+				<div class="void"></div>
+			</section>
+			<hr class="solid">
+
+			<section class="confidence">
+				<div class="conf-elements">
+					<img src="assets/hand-stop-hand-drawn-sign_1.svg" alt="" class="conf-picture">
+					<p class="conf-text">10% DE REMISE IMMÉDIATE DÈS 100 € D’ACHATS</p>
+				</div>
+
+				<div class="conf-elements">
+					<img src="assets/truck-hand-drawn-transport_1.svg" alt="" class="conf-picture">
+					<p class="conf-text">EXPÉDITION SOUS 48/72H</p>
+				</div>
+
+				<div class="conf-elements">
+					<img src="assets/constructor-worker-hand-drawn-person_1.svg" alt="" class="conf-picture">
+					<p class="conf-text">PAIEMENT SÉCURISÉ</p>
+				</div>
+
+				<div class="conf-elements">
+					<img src="assets/pencil-on-paper-sheet_1.svg" alt="" class="conf-picture">
+					<p class="conf-text">UN VASTE CHOIX DE LÉGUMES ANCIENS ET ORIGINAUX</p>
+				</div>
+			</section>
 			
-
-		</div>
-
-		<div class="customers">
-			
+			<section class="needed-products">
 
 
-		</div>
-	</div>
-
-	<div class="confidence">
-		<div class="conf_elements">
-			<img src="" alt="" class="conf_picture">
-			<p class="conf_text">10% DE REMISE IMMÉDIATE DÈS 100 € D’ACHATS</p>
-		</div>
-
-		<div class="conf_elements">
-			<img src="" alt="" class="conf_picture">
-			<p class="conf_text">EXPÉDITION SOUS 48/72H</p>
-		</div>
-
-		<div class="conf_elements">
-			<img src="" alt="" class="conf_picture">
-			<p class="conf_text">PAIEMENT SÉCURISÉ</p>
-		</div>
-
-		<div class="conf_elements">
-			<img src="" alt="" class="conf_picture">
-			<p class="conf_text">UN VASTE CHOIX DE LÉGUMES ANCIENS ET ORIGINAUX</p>
-		</div>
-	</div>
-
-			<!-- <section class="carousel" id="1">
-
-				<h2 class="carousel_title"> Vous pourriez en avoir besoin: </h2>
-				<ul class="carousel-items">
-					<li class="carousel-item">
-						<div class="card">
-							<h2 class="card-title">Betterave</h2>
-							<img src="assets/betterave.png" class="card_img"/>
-							<div class="card-price">
-								<p>2,40€</p>
-							</div>
-						</div>
-					</li>
-					<li class="carousel-item">
-						<div class="card">
-							<h2 class="card-title">Betterave</h2>
-							<img src="assets/betterave.png" class="card_img"/>
-							<div class="card-price">
-								<p>2,40€</p>
-							</div>
-						</div>
-					</li>
-					<li class="carousel-item">
-						<div class="card">
-							<h2 class="card-title">Betterave</h2>
-							<img src="assets/betterave.png" class="card_img"/>
-							<div class="card-price">
-								<p>2,40€</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</section> -->
-			
-	
-		<!-- ---------------------------------------------->
-
-		<section class="carousel" id="2">
-
-			<h2 class="carousel_title"> Dans la même catégorie: </h2>
-            <ul class="carousel-items">
-				<li class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title">Betterave</h2>
-                        <img src="assets/betterave.png" class="card_img"/>
-                        <div class="card-price">
-                            <p>2,40€</p>
-                        </div>
-                    </div>
-				</li>
-				<li class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title">Betterave</h2>
-                        <img src="assets/betterave.png" class="card_img"/>
-                        <div class="card-price">
-                            <p>2,40€</p>
-                        </div>
-                    </div>
-				</li>
-				<li class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title">Betterave</h2>
-                        <img src="assets/betterave.png" class="card_img"/>
-                        <div class="card-price">
-                            <p>2,40€</p>
-                        </div>
-                    </div>
-				</li>
-            </ul>
-        </section>
-    </main>
+			</section>
 </body>
+<footer>
+	<div class="foot-info">
+		<h4>Informations</h4>
+
+		<p>A propos</p>
+		<p>Mentions légales</p>
+		<p>Nos engagements</p>
+		<p>Conditions générales de vente</p>
+	</div>
+			
+	<div class="foot-social">
+		<h4>Suivez-nous dans nos aventures</h4>
+		<div class="foot-links">
+			<a href="">Facebook</a>
+			<a href="">Twitter</a>
+			<a href="">Instagram</a>
+			<a href="">Pinterest</a>
+		</div>
+	</div>
+
+	<div class="foot-contact">
+		<h4>Contacts</h4>
+
+		<p>+33 6 00 00 00 00</p>
+		<a href="">Formulaire de contact</a>
+		<a href="">Nous contatcer par mail</a>
+	</div>
+
+	<div class="foot-newsletter">
+		<p class="foot">Ne ratez aucunes promotions ou nouveautés grâce à notre newsletter</p>
+		<input type="email" name="email" class="email"  placeholder="Adresse Email">
+		<button class="btn-email">OK</button>
+	</div>
+</footer>
+<script src="script.js"></script>
 </html>
